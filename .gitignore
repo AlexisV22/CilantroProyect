@@ -1,0 +1,35 @@
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Environment / secrets (NFR-03) ---
+.env
+.env.local
+.env.*.local
+iot/esp32_smartgreen/secrets.h
+
+# --- Test & build output ---
+coverage/
+test-results/
+playwright-report/
+e2e-report/
+blob-report/
+.playwright/
+*.tsbuildinfo
+
+# --- Runtime artifacts ---
+/logs/
+*.log
+iot/simulator/out/
+server/scripts/out/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Legacy Next.js prototype ---
+legacy/nextjs/node_modules/
+legacy/nextjs/.next/
